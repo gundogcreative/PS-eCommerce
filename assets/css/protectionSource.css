@@ -15,7 +15,7 @@ TABLE OF CONTENTS
 0.2 -- TEXT STYLES
 0.3 -- BUTTONS
 0.4 -- FORMS
-0.5 -- 
+0.5 -- ALERTS
 
 1.0 -- PAGE TOP
 1.0.1 -- -- PAGE TOP DESKTOP
@@ -23,6 +23,7 @@ TABLE OF CONTENTS
 1.0.2 -- -- DESKTOP MENU
 1.0.3 -- -- PAGE TOP MOBILE
 1.0.4 -- -- MOBILE MENU
+1.0.4.1 -- -- -- SNAP DRAWER SCROLL OVERRIDES
 1.0.5 -- -- ALARM.COM LOGIN BUTTON
 
 4.0 -- ARCHIVE @FONT-FACE
@@ -118,7 +119,13 @@ a:focus {text-decoration:none;outline:none;}
 
 
 
-/* ---- 0. ---- */
+/* ---- 0.5 ALERTS ---- */
+
+.alert {border-radius:2px;-webkit-border-radius:2px;}
+.alert-warning {background:url('../img/alertWarning.png') top left repeat transparent;color:#333;border-color:#d0d335;}
+.alert-danger {background:url('../img/alertDanger.png') top left repeat transparent;color:#fff;border-color:#b52828;}
+.alert-success {background:url('../img/alertSuccess.png') top left repeat transparent;color:#fff;border-color:#3a8238;}
+.alert .close {color:#333;}
 
 
 
@@ -154,8 +161,20 @@ a:focus {text-decoration:none;outline:none;}
      *::-ms-backdrop, #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul {top:28px;} /* IE11 */
 }
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li {display:block;margin:0 0 10px;padding:0;}
-#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.latest {font-size:11px;}
-#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product {margin:0;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.latest {font-size:11px;font-style:italic;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product {margin:0 -10px 2px -10px;}
+
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details {display:block;width:100%;clear:both;position:relative;padding:7px 10px;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details:hover {background-color:#efefef;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details a.removeItem {position:absolute;right:10px;top:5px;color:#dcdcdc;font-size:12px;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details a.removeItem:hover {color:#999;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .image {display:inline-block;margin-right:5px;width:auto;vertical-align:top;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .image img {width:50px;height:auto;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info {display:inline-block;width:73%;margin-right:10px;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p {font-family:'Archive';font-size:12px;line-height:14px;margin:0;white-space:normal;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p a {color:#333;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p.qtyPrice {color:#999;}
+
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li#subtotal {margin-top:10px;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li:last-child {margin:0;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li > a {}
@@ -227,7 +246,7 @@ a:focus {text-decoration:none;outline:none;}
 
 /* ---- 1.0.4 MOBILE MENU ---- */
 
-#mobileMenu {background-color:#fff;border-bottom:1px solid #efefef;}
+#mobileMenu {background-color:#fff;border-bottom:1px solid #efefef;margin:0 0 20px;}
 #mobileMenu .container {padding:0;}
 
 #mobileMenu #mobileNavigation {width:100%;display:block;clear:both;text-align:center;height:64px;}
@@ -242,6 +261,11 @@ a:focus {text-decoration:none;outline:none;}
 #mobileMenu #mobileNavigation .mobileLeft a {border-right:1px solid #efefef;border-left:1px solid #efefef;}
 #mobileMenu #mobileNavigation .mobileRight a {border-left:1px solid #efefef;border-right:1px solid #efefef;}
 
+@media (max-width:766px) {
+    #mobileMenu #mobileNavigation .mobileLeft a {border-left:0px;}
+    #mobileMenu #mobileNavigation .mobileRight a {border-right:0px;}
+}
+
 #mobileMenu #mobileNavigation .mobileBranding {display:inline;margin:0 auto;position:relative;}
 #mobileMenu #mobileNavigation .mobileBranding img {height:75%;width:auto;margin:7px 0 0;}
 
@@ -255,7 +279,7 @@ a:focus {text-decoration:none;outline:none;}
 
 
 
-/* -- -- -- -- 1.0.4.1 SNAP DRAWER MENUS -- -- -- -- */
+/* -- -- -- -- 1.0.4.1 SNAP DRAWER SCROLL OVERRIDES -- -- -- -- */
 
 .snap-content, .snap-drawers, snap-drawer {overflow-x:hidden;position:fixed !important;}
 

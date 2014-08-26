@@ -45,3 +45,22 @@ addEvent(document.getElementById('pageWrap'), 'click', function () {
 
 
 
+
+//BOOTSTRAP TOOLTIPS
+
+$(function () { 
+    $("[data-toggle='tooltip']").tooltip(); 
+});
+
+
+
+
+
+//FASTCLICK [REMOVE DELAY ON MOBILE CLICKS]
+
+$(function() {
+    FastClick.attach(document.body);
+});
+
+
+
