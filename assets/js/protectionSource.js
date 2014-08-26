@@ -20,13 +20,6 @@ addEvent(document.getElementById('open-left'), 'click', function () {
     }
 });
 
-addEvent(document.getElementById('pageWrap'), 'click', function () {
-    if (snapper.state().state == "left") {
-        snapper.close();
-    } else {;
-    }
-});
-
 addEvent(document.getElementById('open-right'), 'click', function () {
     if (snapper.state().state == "right") {
         snapper.close();
@@ -36,11 +29,19 @@ addEvent(document.getElementById('open-right'), 'click', function () {
 });
 
 addEvent(document.getElementById('pageWrap'), 'click', function () {
+    if (snapper.state().state == "left") {
+        snapper.close();
+    } else {;
+    }
+});
+
+addEvent(document.getElementById('pageWrap'), 'click', function () {
     if (snapper.state().state == "right") {
         snapper.close();
     } else {;
     }
 });
+
 
 
 

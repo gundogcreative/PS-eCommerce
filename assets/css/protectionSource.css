@@ -255,6 +255,13 @@ a:focus {text-decoration:none;outline:none;}
 
 
 
+/* -- -- -- -- 1.0.4.1 SNAP DRAWER MENUS -- -- -- -- */
+
+.snap-content, .snap-drawers, snap-drawer {overflow-x:hidden;position:fixed !important;}
+
+
+
+
 
 
 /* ---- 1.0.5 ALARM.COM LOGIN BUTTON ---- */
