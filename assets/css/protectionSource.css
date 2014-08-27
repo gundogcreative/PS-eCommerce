@@ -26,6 +26,8 @@ TABLE OF CONTENTS
 1.0.4.1 -- -- -- SNAP DRAWER SCROLL OVERRIDES
 1.0.5 -- -- ALARM.COM LOGIN BUTTON
 
+1.1 -- 
+
 4.0 -- ARCHIVE @FONT-FACE
 
 
@@ -116,6 +118,11 @@ a:focus {text-decoration:none;outline:none;}
 
 /* ---- 0.4 FORMS ---- */
 
+.bootstrap-switch {font-family:'Archive';border-color:#999 !important;border-radius:2px !important;}
+.bootstrap-switch.bootstrap-switch-focused {box-shadow:none !important;-webkit-box-shadow:none !important;border-color:#999 !important;}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {background-color:#186ce5 !important;border-bottom-left-radius:1px !important;border-top-left-radius:1px !important;}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {background-color:#e83232 !important;color:#fff !important;border-bottom-right-radius:1px !important;border-top-right-radius:1px !important;}
+
 
 
 
@@ -136,7 +143,7 @@ a:focus {text-decoration:none;outline:none;}
 
 #pageTopDesktop #desktopTopMenu {padding:10px 0;}
 
-#pageTopDesktop #desktopTopMenu #topMenuLeft {display:inline-block;}
+#pageTopDesktop #desktopTopMenu #topMenuLeft {display:inline-block;float:left;}
 #pageTopDesktop #desktopTopMenu #topMenuLeft h2 {font-size:15px;margin:0;padding:0;color:#fafafa;}
 #pageTopDesktop #desktopTopMenu #topMenuLeft h2 a {color:#dcdcdc;margin-left:6px;}
 
@@ -213,7 +220,7 @@ a:focus {text-decoration:none;outline:none;}
 }
 
 #desktopMenu #desktopNavigation ul > li.drop {padding:0 0 12px 0;}
-#desktopMenu #desktopNavigation ul > li.drop > ul {display:none;position:absolute;top:32px;right:0px;min-width:150px;margin:0;padding:0;background-color:#fff;border:1px solid #cdcdcd;border-top:none;white-space:nowrap;box-shadow:0 6px 8px rgba(0,0,0,.12);-webkit-box-shadow:0 6px 8px rgba(0,0,0,.12);border-radius:0 0 2px 2px;text-align:right;}
+#desktopMenu #desktopNavigation ul > li.drop > ul {display:none;position:absolute;top:32px;right:0px;min-width:150px;margin:0;padding:0;background-color:#fff;border:1px solid #cdcdcd;border-top:none;white-space:nowrap;box-shadow:0 6px 8px rgba(0,0,0,.12);-webkit-box-shadow:0 6px 8px rgba(0,0,0,.12);border-radius:0 0 2px 2px;text-align:right;z-index:999;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a {margin:0;display:block;padding:6px 20px;color:#999;font-size:15px;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a:hover {background-color:#186ce5;text-decoration:none;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a:hover:last-child {border-radius:0 0 2px 2px;}

@@ -64,3 +64,11 @@ $(function() {
 
 
 
+
+
+//BOOTSWITCH 
+
+$("[name='download-version']").bootstrapSwitch();
+
+
+
