@@ -33,6 +33,12 @@ TABLE OF CONTENTS
 1.1.1 -- -- CONTENT TOP
 1.1.2 -- -- SIDEBAR
 
+1.2 -- FOOTER {}
+
+2.0 -- SERVICE PLANS 
+
+3.0 -- CUSTOM SYSTEM BUILD
+
 4.0 -- ARCHIVE @FONT-FACE
 
 
@@ -55,7 +61,7 @@ body {color:#333;font-family:'Open Sans';font-size:13px;overflow:hidden;width:10
 
 /* ---- 0.2 TEXT STYLES ---- */
 
-h1, h2, h3, h4, h5, h6 {font-family:'Archive';}
+h1, h2, h3, h4, h5, h6 {font-family:'Montserrat';text-transform:uppercase;}
 
 p {font-size:13px;color:#999;}
 
@@ -64,8 +70,8 @@ ul li, ol li {color:#999;padding:3px 0;}
 
 section.ulist {margin:0 0 14px;}
 section.ulist h3 {font-size:17px;color:#999;margin:0 0 7px;}
-section.ulist ul {margin:0;padding:0 0 0 8px;}
-section.ulist ul li {display:block;padding:4px 0;font-size:14px;}
+section.ulist ul {margin:0;padding:0 0 0 12px;}
+section.ulist ul li {display:block;padding:4px 0;}
 
 a {color:#186ce5;}
 a:hover {color:#1255b3;}
@@ -91,7 +97,7 @@ a:focus {text-decoration:none;outline:none;}
 
 /* ---- 0.3 BUTTONS ---- */
 
-.button {font-size:15px;font-family:'Archive';border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;/*box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);*/outline:none;}
+.button {font-size:14px;font-family:'Montserrat';font-weight:bold;border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;/*box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);*/outline:none;}
 .button:hover, .button:focus {text-decoration:none;background-color:#efefef;outline:none;}
 .button:active {box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);-webkit-box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);}
 
@@ -132,7 +138,7 @@ form {}
 
 /* ---- 0.4.1 FORM CHECKBOX SWITCH ---- */
 
-.bootstrap-switch {font-family:'Archive';border-color:#999 !important;border-radius:2px !important;}
+.bootstrap-switch {font-family:'Montserrat';font-weight:bold;border-color:#999 !important;border-radius:2px !important;}
 .bootstrap-switch.bootstrap-switch-focused {box-shadow:none !important;-webkit-box-shadow:none !important;border-color:#999 !important;}
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {background-color:#186ce5 !important;border-bottom-left-radius:1px !important;border-top-left-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);}
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {background-color:#e83232 !important;color:#fff !important;border-bottom-right-radius:1px !important;border-top-right-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);}
@@ -179,7 +185,7 @@ form {}
 #pageTopDesktop #desktopTopMenu #topMenuLeft h2 a {color:#dcdcdc;margin-left:6px;}
 
 #pageTopDesktop #desktopTopMenu #topMenuRight {float:right;display:inline-block;}
-#pageTopDesktop #desktopTopMenu #topMenuRight ul {list-style:none;font-family:'Archive';}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul {list-style:none;font-family:'Montserrat';}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li {display:inline;margin-left:11px;position:relative;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li > a {color:#dcdcdc;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li > a:hover {color:#fafafa;}
@@ -192,7 +198,7 @@ form {}
 /* -- -- -- -- 1.0.1.1 LATEST ADDED PRODUCTS CART DROP -- -- -- -- */
 
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop {padding:0 0 16px 0;}
-#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul {display:none;font-family:'Open Sans';top:29px;right:2px;z-index:999;width:320px;margin:0;padding:10px;background-color:#fff;white-space:nowrap;box-shadow:0 6px 8px rgba(0,0,0,.12);-webkit-box-shadow:0 6px 8px rgba(0,0,0,.12);border:1px solid #cdcdcd;border-top:none;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul {display:none;font-family:'Montserrat';top:27px;right:2px;z-index:999;width:320px;margin:0;padding:10px;background-color:#fff;white-space:nowrap;box-shadow:0 6px 8px rgba(0,0,0,.12);-webkit-box-shadow:0 6px 8px rgba(0,0,0,.12);border:1px solid #cdcdcd;border-top:none;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;}
 /* IE 10/11 SPECIFIC */
 @media all and (-ms-high-contrast:none) {
      #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul {top:28px;} /* IE10 */
@@ -209,7 +215,7 @@ form {}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .image {display:inline-block;margin-right:5px;width:auto;vertical-align:top;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .image img {width:50px;height:auto;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info {display:inline-block;width:73%;margin-right:10px;}
-#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p {font-family:'Archive';font-size:12px;line-height:14px;margin:0;white-space:normal;}
+#pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p {font-family:'Montserrat';font-size:12px;line-height:14px;margin:0;white-space:normal;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p a {color:#333;}
 #pageTopDesktop #desktopTopMenu #topMenuRight ul > li.cartDrop > ul > li.product .details .info p.qtyPrice {color:#999;}
 
@@ -238,12 +244,13 @@ form {}
 }
 
 #desktopMenu #desktopNavigation {display:inline-block;float:right;}
-#desktopMenu #desktopNavigation ul {margin:37px 0 0;list-style:none;font-family:'Archive';}
-#desktopMenu #desktopNavigation ul > li {display:inline;margin-left:16px;font-size:18px;position:relative;}
+#desktopMenu #desktopNavigation ul {margin:37px 0 0;list-style:none;font-family:'Montserrat';}
+#desktopMenu #desktopNavigation ul > li {display:inline;margin-left:18px;font-size:18px;position:relative;}
 #desktopMenu #desktopNavigation ul > li:first-child {margin:0;}
 #desktopMenu #desktopNavigation ul > li > a {color:#999;}
 #desktopMenu #desktopNavigation ul > li > a:hover {color:#2c2d2d;}
 #desktopMenu #desktopNavigation ul > li.active > a {color:#2c2d2d;}
+#desktopMenu #desktopNavigation ul > li.service > a {color:#51b54e;}
 
 @media (max-width: 1199px) {
     #desktopMenu #desktopNavigation ul {margin:24px 0 0;}
@@ -322,7 +329,7 @@ form {}
 #mobileDrawer hr {margin:5px 0;border-color:#222}
 
 #mobileDrawer .snap-drawer {}
-#mobileDrawer .snap-drawer ul {margin:0;padding:0;}
+#mobileDrawer .snap-drawer ul {margin:0;padding:0;font-family:'Montserrat'}
 #mobileDrawer .snap-drawer ul a {display:block;}
 #mobileDrawer .snap-drawer ul a li {color:#999;padding:7px 15px;font-size:17px;}
 #mobileDrawer .snap-drawer ul a:hover {background-color:#222;text-decoration:none;}
@@ -338,8 +345,8 @@ form {}
 #mobileDrawer .snap-drawer ul ul.mobileDrop a.active li {padding:3px 15px 3px 24px;}
 
 #mobileDrawer #mobileAdc {display:block;width:100%;clear:both;padding:10px;margin:0 0 10px;}
-#mobileDrawer #mobileAdc a {width:100%;}
-#mobileDrawer #mobileAdc a img {height:18px;width:auto;}
+#mobileDrawer #mobileAdc a {width:100%;border-color:#222;}
+#mobileDrawer #mobileAdc a img {height:18px;width:auto;margin-left:6px;}
 
 
 
@@ -356,8 +363,13 @@ form {}
 /* ---- 1.0.5 ALARM.COM LOGIN BUTTON ---- */
 
 #alarmComLogin {position:relative;}
-#alarmComLogin a {position:absolute;right:0;top:40px;font-family:'Archive';font-size:13px;padding:6px 12px;display:inline-block;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;border-top:none;}
-#alarmComLogin a img {width:105px;}
+#alarmComLogin a {position:absolute;right:0;top:38px;font-size:13px;text-transform:uppercase;padding:6px 12px;display:inline-block;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;border-top:none;}
+/* IE 10/11 SPECIFIC */
+@media all and (-ms-high-contrast:none) {
+     #alarmComLogin a {top:39px;} /* IE10 */
+     *::-ms-backdrop, #alarmComLogin a {top:39px;} /* IE11 */
+}
+#alarmComLogin a img {width:105px;margin-left:6px;}
 #alarmComLogin a:hover {text-decoration:none;}
 
 
@@ -373,7 +385,12 @@ form {}
 #contentTop {margin-bottom:28px;}
 #contentTop #pageTitle {}
 #contentTop #pageTitle h1 {margin:0;padding:0;font-size:28px;line-height:32px;}
-@media (max-width: 991px) {#contentTop #pageTitle h1 {font-size:21px;line-height:24px;}}
+@media (max-width: 991px) {
+    #contentTop #pageTitle h1 {font-size:21px;line-height:24px;}
+}
+@media (max-width: 767px) {
+    #contentTop #pageTitle h1 {text-align:center;}
+}
 #contentTop #pageTitle ul.crumbs {margin:0;padding:0;}
 #contentTop #pageTitle ul.crumbs > li {display:inline;font-size:10px;padding:2px 0;}
 #contentTop #pageTitle ul.crumbs > li::after {content:" >";}
@@ -389,6 +406,13 @@ form {}
 /* ---- 1.1.2 SIDEBAR ---- */
 
 #sidebar {}
+#sidebar section.ulist {}
+#sidebar section.ulist ul {}
+#sidebar section.ulist ul li {font-size:14px;}
+#sidebar section.ulist ul li.active {font-weight:bold;}
+#sidebar section.ulist ul li a {color:#999;}
+#sidebar section.ulist ul li.active a {color:#2c2d2d;}
+#sidebar section.ulist ul li:hover a {color:#2c2d2d;}
 
 
 
