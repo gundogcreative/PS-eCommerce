@@ -26,12 +26,14 @@ TABLE OF CONTENTS
 1.0.2 -- -- DESKTOP MENU
 1.0.3 -- -- PAGE TOP MOBILE
 1.0.4 -- -- MOBILE MENU
-1.0.4.1 -- -- -- SNAP DRAWER SCROLL OVERRIDES
+1.0.4.1 -- -- -- MOBILE SNAP CART
+1.0.4.2 -- -- -- SNAP DRAWER SCROLL OVERRIDES
 1.0.5 -- -- ALARM.COM LOGIN BUTTON
 
 1.1 -- CONTENT
 1.1.1 -- -- CONTENT TOP
 1.1.2 -- -- SIDEBAR
+1.1.3 -- -- CATEGORIES
 
 1.2 -- FOOTER {}
 
@@ -97,13 +99,15 @@ a:focus {text-decoration:none;outline:none;}
 
 /* ---- 0.3 BUTTONS ---- */
 
-.button {font-size:14px;font-family:'Montserrat';font-weight:bold;border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;/*box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);*/outline:none;}
+.button {font-size:14px;font-family:'Montserrat';border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;/*box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);*/outline:none;}
 .button:hover, .button:focus {text-decoration:none;background-color:#efefef;outline:none;}
 .button:active {box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);-webkit-box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);}
 
 .button.block {display:block;width:100%;}
 
 .button.disabled {opacity:.7;cursor:wait;}
+
+.button.small {padding:5px 12px;font-size:11px;}
 
 
 .button.blue {color:#efefef;border:1px solid #1461cc;background:#186ce5;}
@@ -162,6 +166,7 @@ form {}
 /* ---- 0.6 MODALS ---- */
 
 .modal {}
+.modal-content {border-radius:3px;-webkit-border-radius:3px;}
 
 
 
@@ -245,7 +250,7 @@ form {}
 
 #desktopMenu #desktopNavigation {display:inline-block;float:right;}
 #desktopMenu #desktopNavigation ul {margin:37px 0 0;list-style:none;font-family:'Montserrat';}
-#desktopMenu #desktopNavigation ul > li {display:inline;margin-left:18px;font-size:18px;position:relative;}
+#desktopMenu #desktopNavigation ul > li {display:inline;margin-left:17px;font-size:18px;position:relative;}
 #desktopMenu #desktopNavigation ul > li:first-child {margin:0;}
 #desktopMenu #desktopNavigation ul > li > a {color:#999;}
 #desktopMenu #desktopNavigation ul > li > a:hover {color:#2c2d2d;}
@@ -259,7 +264,7 @@ form {}
 
 #desktopMenu #desktopNavigation ul > li.drop {padding:0 0 12px 0;}
 #desktopMenu #desktopNavigation ul > li.drop > ul {display:none;position:absolute;top:32px;right:0px;min-width:150px;margin:0;padding:0;background-color:#fff;border:1px solid #cdcdcd;border-top:none;white-space:nowrap;box-shadow:0 6px 8px rgba(0,0,0,.12);-webkit-box-shadow:0 6px 8px rgba(0,0,0,.12);border-radius:0 0 2px 2px;text-align:right;z-index:999;}
-#desktopMenu #desktopNavigation ul > li.drop > ul > a {margin:0;display:block;padding:6px 20px;color:#999;font-size:15px;}
+#desktopMenu #desktopNavigation ul > li.drop > ul > a {margin:0;display:block;padding:4px 20px;color:#999;font-size:15px;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a:hover {background-color:#186ce5;text-decoration:none;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a:hover:last-child {border-radius:0 0 2px 2px;}
 #desktopMenu #desktopNavigation ul > li.drop > ul > a > li {}
@@ -323,7 +328,7 @@ form {}
 #mobileDrawer {background-color:#333;}
 
 #mobileDrawer #mobileGetStarted {display:block;width:100%;clear:both;padding:10px;}
-#mobileDrawer #mobileGetStarted a {color:#fff;width:100%;box-shadow:none;-webkit-box-shadow:none;background:transparent;}
+#mobileDrawer #mobileGetStarted a {color:#fff;padding:8px 14px;width:100%;box-shadow:none;-webkit-box-shadow:none;background:transparent;}
 #mobileDrawer #mobileGetStarted a:hover, #mobileDrawer #mobileGetStarted a:focus {background-color:#fff;color:#333;border-color:#fff;}
 
 #mobileDrawer hr {margin:5px 0;border-color:#222}
@@ -351,7 +356,17 @@ form {}
 
 
 
-/* -- -- -- -- 1.0.4.1 SNAP DRAWER SCROLL OVERRIDES -- -- -- -- */
+
+/* -- -- -- -- 1.0.4.1 MOBILE SNAP CART -- -- -- -- */
+
+#mobileSnapCart {}
+#mobileSnapCart .controlWrap {display:block;width:100%;clear:both;padding:10px;}
+#mobileSnapCart .controlWrap a {width:100%;box-shadow:none;-webkit-box-shadow:none;border-color:#222;}
+
+
+
+
+/* -- -- -- -- 1.0.4.2 SNAP DRAWER SCROLL OVERRIDES -- -- -- -- */
 
 .snap-content, .snap-drawers, snap-drawer {overflow-x:hidden;position:fixed !important;}
 
@@ -363,7 +378,7 @@ form {}
 /* ---- 1.0.5 ALARM.COM LOGIN BUTTON ---- */
 
 #alarmComLogin {position:relative;}
-#alarmComLogin a {position:absolute;right:0;top:38px;font-size:13px;text-transform:uppercase;padding:6px 12px;display:inline-block;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;border-top:none;}
+#alarmComLogin a {position:absolute;right:0;top:38px;font-size:12px;padding:6px 12px;display:inline-block;border-radius:0 0 2px 2px;-webkit-border-radius:0 0 2px 2px;border-top:none;}
 /* IE 10/11 SPECIFIC */
 @media all and (-ms-high-contrast:none) {
      #alarmComLogin a {top:39px;} /* IE10 */
@@ -413,6 +428,27 @@ form {}
 #sidebar section.ulist ul li a {color:#999;}
 #sidebar section.ulist ul li.active a {color:#2c2d2d;}
 #sidebar section.ulist ul li:hover a {color:#2c2d2d;}
+
+
+
+
+/* ---- 1.1.3 CATEGORIES ---- */
+
+.category {/*min-height:300px;*/padding:6px;}
+@media (max-width: 767px) and (min-width: 480px) {
+    .category {width:49.6%;display:inline-block;}
+}
+.category a {}
+.category a:hover {text-decoration:none;}
+.category .panel {margin-bottom:0px;text-align:center;border-color:#fff;box-shadow:none;-webkit-box-shadow:none;}
+.category a:hover .panel {border-color:#186ce5;}
+.category .panel .panel-body {padding:8px;}
+.category .panel .panel-body h3 {font-size:16px;color:#333;}
+@media (max-width: 1199px) {
+    .category .panel .panel-body h3 {font-size:14px;}
+}
+.category a:hover .panel .panel-body h3 {color:#186ce5;}
+.category .panel .panel-body p {}
 
 
 
