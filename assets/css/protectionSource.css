@@ -129,6 +129,15 @@ a:focus {text-decoration:none;outline:none;}
 .button.orange:hover {color:#fff;border-color:#c25d2b;background:#db6930;}
 
 
+/* Transparent Button Options
+.button.blue {color:#186ce5;border:1px solid #186ce5;background:transparent;}
+.button.grey {color:#999;border:1px solid #dcdcdc;background:transparent;}
+.button.black {color:#333333;border:1px solid #333333;background:transparent;}
+.button.green {color:#51b54e;border:1px solid #51b54e;background:transparent;}
+.button.red {color:#e83232;border:1px solid #e83232;background:transparent;}
+.button.orange {color:#e86f33;border:1px solid #e86f33;background:transparent;}
+*/
+
 
 
 /* ---- 0.4 FORMS ---- */
@@ -144,8 +153,8 @@ form {}
 
 .bootstrap-switch {font-family:'Montserrat';font-weight:bold;border-color:#999 !important;border-radius:2px !important;}
 .bootstrap-switch.bootstrap-switch-focused {box-shadow:none !important;-webkit-box-shadow:none !important;border-color:#999 !important;}
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {background-color:#186ce5 !important;border-bottom-left-radius:1px !important;border-top-left-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);}
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {background-color:#e83232 !important;color:#fff !important;border-bottom-right-radius:1px !important;border-top-right-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.7);}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {background-color:#186ce5 !important;border-bottom-left-radius:1px !important;border-top-left-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.3);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.3);}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {background-color:#e83232 !important;color:#fff !important;border-bottom-right-radius:1px !important;border-top-right-radius:1px !important;box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.3);-webkit-box-shadow:inset 0px 0px 8px -2px rgba(0,0,0,.3);}
 .bootstrap-switch .bootstrap-switch-label {box-shadow:inset 2px 2px 4px 0px rgba(255,255,255,.9) !important;-webkit-box-shadow:inset 2px 2px 4px 0px rgba(255,255,255,.9) !important;background:#f1f1f1 !important;}
 
 
@@ -328,13 +337,13 @@ form {}
 #mobileDrawer {background-color:#333;}
 
 #mobileDrawer #mobileGetStarted {display:block;width:100%;clear:both;padding:10px;}
-#mobileDrawer #mobileGetStarted a {color:#fff;padding:8px 14px;width:100%;box-shadow:none;-webkit-box-shadow:none;background:transparent;}
+#mobileDrawer #mobileGetStarted a {color:#fff;padding:8px 14px;width:100%;background:transparent;}
 #mobileDrawer #mobileGetStarted a:hover, #mobileDrawer #mobileGetStarted a:focus {background-color:#fff;color:#333;border-color:#fff;}
 
 #mobileDrawer hr {margin:5px 0;border-color:#222}
 
 #mobileDrawer .snap-drawer {}
-#mobileDrawer .snap-drawer ul {margin:0;padding:0;font-family:'Montserrat'}
+#mobileDrawer .snap-drawer ul {margin:0;padding:0;font-family:'Montserrat';}
 #mobileDrawer .snap-drawer ul a {display:block;}
 #mobileDrawer .snap-drawer ul a li {color:#999;padding:7px 15px;font-size:17px;}
 #mobileDrawer .snap-drawer ul a:hover {background-color:#222;text-decoration:none;}
@@ -359,9 +368,27 @@ form {}
 
 /* -- -- -- -- 1.0.4.1 MOBILE SNAP CART -- -- -- -- */
 
-#mobileSnapCart {}
+#mobileSnapCart {padding:0 0 10px;right:1px;}
 #mobileSnapCart .controlWrap {display:block;width:100%;clear:both;padding:10px;}
-#mobileSnapCart .controlWrap a {width:100%;box-shadow:none;-webkit-box-shadow:none;border-color:#222;}
+#mobileSnapCart .controlWrap a {width:100%;}
+#mobileSnapCart .controlWrap a.button {border-color:#222;}
+
+#mobileSnapCart #mobileSnapRecentItems {}
+#mobileSnapCart #mobileSnapRecentItems li {}
+#mobileSnapCart #mobileSnapRecentItems li a {}
+
+#mobileSnapCart #mobileSnapRecentItems > li.subtotal {text-align:center;padding:6px 0;font-size:14px;}
+#mobileSnapCart #mobileSnapRecentItems > li.subtotal span {color:#fafafa;}
+#mobileSnapCart #mobileSnapRecentItems > li.product {padding:0px;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details {display:block;width:100%;clear:both;position:relative;padding:10px;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details:hover {background-color:#222;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .image {display:inline-block;margin-right:5px;width:auto;vertical-align:top;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .image img {width:50px;height:auto;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .info {display:inline-block;width:74%;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .info p {font-family:'Montserrat';font-size:12px;line-height:14px;margin:0;white-space:normal;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .info p a {color:#fafafa;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .info p a:hover {background-color:transparent;}
+#mobileSnapCart #mobileSnapRecentItems > li.product .details .info p.qtyPrice {color:#999;}
 
 
 
