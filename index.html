@@ -350,6 +350,11 @@
             </div><!--/ #sidebar .col-sm-3 -->
             
         <!-- CATEGORIES LIST -->
+            
+            <div id="miniSort" class="col-sm-3 hidden-sm hidden-md hidden-lg">
+                mini sort
+            </div><!--/ .col-sm-3 -->
+            
             <div class="col-lg-10 col-sm-9">
                 <div class="row">
                     <div class="category col-md-4 col-sm-6">
@@ -535,9 +540,11 @@
                             
                             <div class="addToCart">
                                 <div class="productQty">
-                                    <button type="" class="button minus"><i class="fa fa-minus"></i></button>
-                                    <input type="text" class="" id="" for="" placeholder="" value="1">
-                                    <button type="" class="button plus"><i class="fa fa-plus"></i></button>
+                                    <form>
+                                        <button type="button" class="button minus"><i class="fa fa-minus"></i></button>
+                                        <input type="text" class="" id="" name="" for="" placeholder="" value="1" min="1" max="100">
+                                        <button type="button" class="button plus"><i class="fa fa-plus"></i></button>
+                                    </form>
                                 </div><!--/ .productQty -->
                                 
                                 <a href="#" class="button blue block">Add To Cart</a>
@@ -575,16 +582,69 @@
                             </ul>
                     </div><!--/ .col-md-6 .productSpecs-->
                     
-                    <div class="col-md-6">
+                    <div class="col-md-6 productDownloads">
                         <h2><strong>2GIG Go! Control Panel Downloads (Click to Download)</strong></h2>
-                    </div><!--/ .col-md-6 -->
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>File Name</th>
+                                        <th>Size</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>TestFileName.pdf</td>
+                                        <td>2.8mb</td>
+                                        <td style="text-align:right;"><a href="#" class="button small">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TestFileName.pdf</td>
+                                        <td>2.8mb</td>
+                                        <td style="text-align:right;"><a href="#" class="button small">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TestFileName.pdf</td>
+                                        <td>2.8mb</td>
+                                        <td style="text-align:right;"><a href="#" class="button small">Download</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TestFileName.pdf</td>
+                                        <td>2.8mb</td>
+                                        <td style="text-align:right;"><a href="#" class="button small">Download</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div><!--/ .col-md-6 .productDownloads-->
+                    
+                    <div class="col-md-12 productVideos">
+                        <h2><strong>2GIG Go! Control Panel Videos</strong></h2>
+                            <div class="row">
+                                <div class="col-md-6 singleVideo">
+                                    <h2>2GIG Go! Control Panel Installation Video - Part 1 of 3</h2>
+                                        <div class="js-video widescreen">
+                                            <iframe width="560" height="315" src="http://www.youtube.com/embed/UuMUnyIkjLs" frameborder="0" allowfullscreen></iframe>
+                                        </div><!--/ .js-video -->
+                                </div><!--/ .col-md-6 .singleVideo -->
+                                
+                                <div class="col-md-6 singleVideo">
+                                    <h2>2GIG Go! Control Panel Installation Video - Part 1 of 3</h2>
+                                        <div class="js-video widescreen">
+                                            <iframe width="560" height="315" src="http://www.youtube.com/embed/UuMUnyIkjLs" frameborder="0" allowfullscreen></iframe>
+                                        </div><!--/ .js-video -->
+                                </div><!--/ .col-md-6 .singleVideo -->
+                                
+                                <div class="col-md-6 singleVideo">
+                                    <h2>2GIG Go! Control Panel Installation Video - Part 1 of 3</h2>
+                                        <div class="js-video widescreen">
+                                            <iframe width="560" height="315" src="http://www.youtube.com/embed/UuMUnyIkjLs" frameborder="0" allowfullscreen></iframe>
+                                        </div><!--/ .js-video -->
+                                </div><!--/ .col-md-6 .singleVideo -->
+                            </div><!--/ .row -->
+                    </div><!--/ .col-md-12 .productVideos -->
                 </div><!--/ .row .productSuppDetails -->
                 
             </div><!--/ .col-lg-10 .col-sm-9 -->
-            
-            <div id="miniSort" class="col-sm-3 hidden-sm hidden-md hidden-lg">
-                mini sort
-            </div><!--/ .col-sm-3 -->
             
         </div><!--/ # .row -->
     
