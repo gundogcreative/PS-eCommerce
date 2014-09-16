@@ -44,7 +44,8 @@ TABLE OF CONTENTS
 
 2.0 -- SERVICE PLANS 
 
-3.0 -- CUSTOM SYSTEM BUILD
+3.0 -- STEP BY STEP PROCESS
+3.1 -- CUSTOM SYSTEM BUILD
 
 4.0 -- ARCHIVE @FONT-FACE
 
@@ -205,7 +206,7 @@ table td > .button.small {margin:-2px 0;}
 
 
 
-/* ---- 0.9 RESPONSIVE VIDEO ---- *//* ---- 0.X VIDEO RESPONSIVE ---- */
+/* ---- 0.9 RESPONSIVE VIDEO ---- */
 
 .js-video {height:0;padding-top:25px;padding-bottom:67.5%;margin-bottom:10px;position:relative;overflow:hidden;}
 .js-video.widescreen {padding-bottom:57.25%;}
@@ -459,6 +460,7 @@ table td > .button.small {margin:-2px 0;}
     #contentTop #pageTitle h1 {font-size:21px;line-height:24px;}
 }
 @media (max-width: 767px) {
+    #contentTop {margin-bottom:14px;}
     #contentTop #pageTitle h1 {text-align:center;}
 }
 #contentTop #pageTitle ul.crumbs {margin:0;padding:0;}
@@ -467,6 +469,10 @@ table td > .button.small {margin:-2px 0;}
 #contentTop #pageTitle ul.crumbs > li:last-child::after {content:"";}
 #contentTop #pageTitle ul.crumbs > li > a {}
 #contentTop #pageTitle ul.crumbs > li > a:hover {}
+
+@media (max-width: 767px) {
+    #contentTop #pageTitle ul.crumbs {text-align:center;}
+}
 
 #contentTop #contentTopCta {text-align:right;}
 
@@ -614,7 +620,7 @@ table td > .button.small {margin:-2px 0;}
 .productSuppDetails .relatedProducts {}
 .productSuppDetails .relatedProducts div {text-align:center;}
 .productSuppDetails .relatedProducts div img {}
-.productSuppDetails .relatedProducts div h4 {font-size:12px;line-height:15px;margin:0 0 14px;}
+.productSuppDetails .relatedProducts div h4 {font-size:12px;line-height:15px;margin:0 0 14px;color:#333;}
 .productSuppDetails .relatedProducts div a {}
 
 .productReview {}
@@ -677,6 +683,68 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
     footer #footerLogos ul#creditCardLogos li img {width:35px;}
 }
 
+
+
+
+/* ---- 3.0 STEP BY STEP PROCESS ---- */
+
+.stepProcess {}
+.stepProcess .singleStep {margin:0 0 10px;}
+
+.stepProcess .singleStep .stepHeading {display:block;clear:both;width:100%;margin-bottom:12px;font-weight:bold;font-family:'Montserrat';font-size:15px;border:1px solid #ddd;border-radius:3px;-webkit-border-radius:3px;padding:8px 12px;}
+
+.stepProcess .singleStep.active .stepHeading {color:#186ce5;border-color:#186ce5;}
+
+.stepProcess .singleStep.success .stepHeading {color:#51b543;border-color:#51b543;}
+.stepProcess .singleStep.success .stepHeading a {color:#51b543;}
+
+.stepProcess .singleStep.disabled {opacity:.55;}
+.stepProcess .singleStep.disabled .stepHeading {color:#999;border-color:#ddd;}
+.stepProcess .singleStep.disabled a {color:#999;}
+
+.stepProcess .singleStep .stepHeading span.number {margin-right:6px;}
+.stepProcess .singleStep .stepHeading a.caretDrop {float:right;}
+
+.stepProcess .singleStep .stepBody {}
+
+@media (max-width: 991px) {
+    .stepProcess .singleStep .stepHeading {font-size:13px;}
+    .stepProcess .singleStep .stepBody {text-align:center;}
+    .stepProcess .singleStep .stepBody p {font-size:12px;}
+}
+
+
+
+/* ---- 3.1 CUSTOM SYSTEM BUILD ---- */
+
+#sysBuild {}
+
+#sysBuild #options {}
+
+#sysBuild #options #stepPanel {text-align:center;}
+#sysBuild #options #stepPanel img {}
+#sysBuild #options #stepPanel h2 {font-size:22px;text-transform:none;color:#333;}
+#sysBuild #options #stepPanel p {color:#333;margin:0 0 20px;}
+#sysBuild #options #stepPanel button {margin:0 0 40px;}
+#sysBuild #options #stepPanel button.selected {opacity:.5;}
+
+#sysBuild #summary {}
+#sysBuild #summary.sticky {position:fixed;width:263px;top:20px;}
+
+@media (max-width: 1199px) {#sysBuild #summary.sticky {width:213px;}}
+@media (max-width: 991px) {#sysBuild #summary {display:none;}}
+
+#sysBuild #summary .panel {}
+#sysBuild #summary .panel .panel-heading {text-align:center;font-weight:bold;font-family:'Montserrat';font-size:15px;padding:8px;}
+#sysBuild #summary .panel .panel-body {padding:12px;}
+#sysBuild #summary .panel .panel-body table {font-size:12px;margin-bottom:8px;}
+#sysBuild #summary .panel .panel-body table tr {}
+#sysBuild #summary .panel .panel-body table tr td {border:none;padding:2px 0;}
+#sysBuild #summary .panel .panel-body table tr td:last-child {text-align:right;}
+
+#sysBuild #summary .panel .panel-body table tr#summaryPrice td {padding-bottom:14px;}
+#sysBuild #summary .panel .panel-body table tr#summaryPlan {font-weight:bold;}
+#sysBuild #summary .panel .panel-body table tr#summaryDiscount {font-weight:bold;font-style:italic;}
 
 
 

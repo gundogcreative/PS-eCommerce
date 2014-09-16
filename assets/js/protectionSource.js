@@ -74,5 +74,36 @@ $("[name='download-version']").bootstrapSwitch();
 
 
 
+//STICKY SYSTEM BUILD SUMMARY 
+
+$("#pageWrap").scroll(function() {    
+    var scroll = $("#pageWrap").scrollTop();
+    if (scroll > 230) {
+        $("#summary").addClass("sticky");
+    }
+    else {
+        $("#summary").removeClass("sticky");
+    }
+});
 
 
+
+
+
+//CHANGE ICON ON CLICK
+
+$(".caretDrop").click(function(){
+  $(".caretIcon", this).toggleClass("fa-caret-up");
+});
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
