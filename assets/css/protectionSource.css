@@ -613,6 +613,10 @@ table td > .button.small {margin:-2px 0;}
 
 .productSuppDetails .productDownloads {}
 
+@media (max-width: 991px) {
+    .productSuppDetails .productDownloads table {font-size:12px;}
+}
+
 .productSuppDetails .productVideos {}
 .productSuppDetails .productVideos .singleVideo {margin:20px 0 0;}
 .productSuppDetails .productVideos .singleVideo h2 {text-align:center;font-size:15px;margin:10px 0;}
@@ -689,9 +693,9 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 /* ---- 3.0 STEP BY STEP PROCESS ---- */
 
 .stepProcess {}
-.stepProcess .singleStep {margin:0 0 10px;}
+.stepProcess .singleStep {margin:10px 0 0;}
 
-.stepProcess .singleStep .stepHeading {display:block;clear:both;width:100%;margin-bottom:12px;font-weight:bold;font-family:'Montserrat';font-size:15px;border:1px solid #ddd;border-radius:3px;-webkit-border-radius:3px;padding:8px 12px;}
+.stepProcess .singleStep .stepHeading {display:block;clear:both;width:100%;font-weight:bold;font-family:'Montserrat';font-size:15px;border:1px solid #ddd;border-radius:3px;-webkit-border-radius:3px;padding:8px 12px;}
 
 .stepProcess .singleStep.active .stepHeading {color:#186ce5;border-color:#186ce5;}
 
@@ -703,9 +707,9 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 .stepProcess .singleStep.disabled a {color:#999;}
 
 .stepProcess .singleStep .stepHeading span.number {margin-right:6px;}
-.stepProcess .singleStep .stepHeading a.caretDrop {float:right;}
+.stepProcess .singleStep .stepHeading a.caretDrop {float:right;padding:10px;margin:-10px;}
 
-.stepProcess .singleStep .stepBody {}
+.stepProcess .singleStep .stepBody {margin-top:12px;}
 
 @media (max-width: 991px) {
     .stepProcess .singleStep .stepHeading {font-size:13px;}
@@ -728,11 +732,27 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 #sysBuild #options #stepPanel button {margin:0 0 40px;}
 #sysBuild #options #stepPanel button.selected {opacity:.5;}
 
+@media (max-width: 767px) {
+    #sysBuild #options #stepPanel h2 {font-size:20px;margin-bottom:18px;margin-top:0px;}
+    #sysBuild #options #stepPanel p {display:none;}
+    #sysBuild #options #stepPanel button {padding:5px 12px;font-size:12px;}
+}
+
+@media (max-width: 480px) {
+    #sysBuild #options #stepPanel h2 {font-size:16px;}
+    #sysBuild #options #stepPanel button {padding:4px 10px;font-size:11px;}
+}
+
 #sysBuild #summary {}
 #sysBuild #summary.sticky {position:fixed;width:263px;top:20px;}
 
-@media (max-width: 1199px) {#sysBuild #summary.sticky {width:213px;}}
-@media (max-width: 991px) {#sysBuild #summary {display:none;}}
+@media (max-width: 1199px) {
+    #sysBuild #summary.sticky {width:213px;}
+}
+
+@media (max-width: 991px) {
+    #sysBuild #summary {display:none;}
+}
 
 #sysBuild #summary .panel {}
 #sysBuild #summary .panel .panel-heading {text-align:center;font-weight:bold;font-family:'Montserrat';font-size:15px;padding:8px;}
