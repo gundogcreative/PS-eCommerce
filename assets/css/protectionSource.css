@@ -796,6 +796,27 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 #sysBuild #options #stepPlans .addOns .checkbox label span {color:#999;font-style:italic;font-weight:100;}
 
 #sysBuild #options #stepEquipment {}
+#sysBuild #options #stepEquipment .equipmentLine {display:inline-block;clear:both;width:100%;position:relative;margin:0 0 10px;padding:0 0 20px;border-bottom:1px solid #efefef;}
+#sysBuild #options #stepEquipment .equipmentLine img {}
+#sysBuild #options #stepEquipment .equipmentLine h2 {font-size:15px;line-height:18px;margin:8px 0 8px;}
+#sysBuild #options #stepEquipment .equipmentLine h2 span {margin-left:12px;color:#186ce5;}
+#sysBuild #options #stepEquipment .equipmentLine h2 span.sale {}
+#sysBuild #options #stepEquipment .equipmentLine h2 span.sale span {}
+#sysBuild #options #stepEquipment .equipmentLine p.shortDescription {font-size:11px;}
+#sysBuild #options #stepEquipment .equipmentLine .productQty {}
+#sysBuild #options #stepEquipment .equipmentLine .productQty form {}
+#sysBuild #options #stepEquipment .equipmentLine .productQty form button {width:32px;height:30px;font-size:10px;}
+#sysBuild #options #stepEquipment .equipmentLine .productQty form input {height:30px;width:40px;}
+
+@media (max-width: 767px) {
+    #sysBuild #options #stepEquipment .equipmentLine h2 {font-size:15px;}
+    #sysBuild #options #stepEquipment .equipmentLine h2 span {display:block;clear:both;float:none;font-size:12px;margin:5px 0;}
+}
+
+@media (max-width: 480px) {
+    #sysBuild #options #stepEquipment .equipmentLine h2 {font-size:14px;}
+    #sysBuild #options #stepEquipment .equipmentLine p.shortDescription {display:none;}
+}
 
 #sysBuild #summary {}
 #sysBuild #summary.sticky {position:fixed;width:263px;top:20px;}
