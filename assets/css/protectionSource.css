@@ -105,33 +105,35 @@ a:focus {text-decoration:none;outline:none;}
 
 /* ---- 0.3 BUTTONS ---- */
 
-.button {font-size:14px;font-family:'Montserrat';border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;/*box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);*/outline:none;}
+.button {font-size:14px;font-family:'Montserrat';border:1px solid #dcdcdc;background-color:#fff;padding:8px 14px;text-align:center;border-radius:2px;-webkit-border-raidus:2px;display:inline-block;vertical-align:middle;cursor:pointer;white-space:nowrap;box-shadow:inset 1px 1px 0px 0px rgba(255,255,255,.2);outline:none;}
 .button:hover, .button:focus {text-decoration:none;background-color:#efefef;outline:none;}
 .button:active {box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);-webkit-box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,.125);}
 
 .button.block {display:block;width:100%;}
+
+.button.active {outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125);opacity:.8;}
 
 .button.disabled {opacity:.7;cursor:wait;}
 
 .button.small {padding:5px 12px;font-size:11px;}
 
 
-.button.blue {color:#efefef;border:1px solid #1461cc;background:#186ce5;}
+.button.blue {color:#efefef;border:1px solid #1461cc;background:#186ce5;text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);}
 .button.blue:hover {color:#fff;border-color:#135bbf;background:#1461cc;}
 
 .button.grey {color:#555;border:1px solid #c2c2c2;background:#dcdcdc;}
 .button.grey:hover {color:#333;border-color:#b5b5b5;background:#c2c2c2;}
 
-.button.black {color:#efefef;border:1px solid #1a1a1a;background:#333333;}
+.button.black {color:#efefef;border:1px solid #1a1a1a;background:#333333;text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);}
 .button.black:hover {color:#fff;border-color:#0d0d0d;background:#262626;}
 
-.button.green {color:#efefef;border:1px solid #469c43;background:#51b54e;}
+.button.green {color:#efefef;border:1px solid #469c43;background:#51b54e;text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);}
 .button.green:hover {color:#fff;border-color:#408f3d;background:#4ca848;}
 
-.button.red {color:#fafafa;border:1px solid #cf2d2d;background:#e83232;}
+.button.red {color:#fafafa;border:1px solid #cf2d2d;background:#e83232;text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);}
 .button.red:hover {color:#fff;border-color:#c22b2b;background:#db3030;}
 
-.button.orange {color:#fafafa;border:1px solid #cf632d;background:#e86f33;}
+.button.orange {color:#fafafa;border:1px solid #cf632d;background:#e86f33;text-shadow:0 1px 0 rgba(0, 0, 0, 0.2);}
 .button.orange:hover {color:#fff;border-color:#c25d2b;background:#db6930;}
 
 
@@ -690,10 +692,52 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 
 
 
+/* ---- 2.0 SERVICE PLANS ---- */
+
+.servicePlan {padding:8px;text-align:center;border:1px solid #dcdcdc;border-radius:2px;-webkit-border-radius:2px;}
+.servicePlan:hover {border-color:#999;}
+.servicePlan h3 {font-size:34px;font-weight:100;font-family:'Open Sans';text-transform:none;}
+.servicePlan p.price {font-size:17px !important;color:#333;margin:0;padding:0;}
+.servicePlan p.price span {font-size:11px;color:#999;}
+.servicePlan ul {margin:24px 0 30px 24px;padding:0;text-align:left;}
+.servicePlan ul li {list-style:none;color:#333;}
+.servicePlan ul li {padding:5px 0;}
+.servicePlan ul li i {margin-right:16px;}
+.servicePlan button {}
+
+@media (max-width: 1199px) {
+    .servicePlan ul {margin-left:14px;}
+    .servicePlan ul li {font-size:12px;}
+    .servicePlan ul li i {margin-right:8px;}
+}
+
+@media (max-width: 767px) {
+    .servicePlan {margin-bottom:20px;}
+    .servicePlan ul {text-align:center;margin:20px 0 30px;}
+    .servicePlan p.price {font-size:17px;color:#333;margin:0;padding:0;}
+    .servicePlan p.price span {font-size:11px;color:#999;}
+}
+
+.servicePlan.basic {}
+.servicePlan.basic h3 {color:#999;}
+.servicePlan.basic button {}
+
+.servicePlan.plus {border-color:#183ce5;}
+.servicePlan.plus:hover {border-color:#51b54e;}
+.servicePlan.plus h3 {color:#183ce5;}
+.servicePlan.plus button {}
+
+.servicePlan.premier {}
+.servicePlan.premier h3 {color:#e86e32;}
+.servicePlan.premier button {}
+
+
+
+
 /* ---- 3.0 STEP BY STEP PROCESS ---- */
 
 .stepProcess {}
-.stepProcess .singleStep {margin:10px 0 0;}
+.stepProcess .singleStep {margin:0 0 10px;}
 
 .stepProcess .singleStep .stepHeading {display:block;clear:both;width:100%;font-weight:bold;font-family:'Montserrat';font-size:15px;border:1px solid #ddd;border-radius:3px;-webkit-border-radius:3px;padding:8px 12px;}
 
@@ -713,7 +757,7 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 
 @media (max-width: 991px) {
     .stepProcess .singleStep .stepHeading {font-size:13px;}
-    .stepProcess .singleStep .stepBody {text-align:center;}
+    .stepProcess .singleStep .stepBody {}
     .stepProcess .singleStep .stepBody p {font-size:12px;}
 }
 
@@ -733,7 +777,7 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 #sysBuild #options #stepPanel button.selected {opacity:.5;}
 
 @media (max-width: 767px) {
-    #sysBuild #options #stepPanel h2 {font-size:20px;margin-bottom:18px;margin-top:0px;}
+    #sysBuild #options #stepPanel h2 {font-size:17px;margin-bottom:18px;margin-top:0px;text-align:center;}
     #sysBuild #options #stepPanel p {display:none;}
     #sysBuild #options #stepPanel button {padding:5px 12px;font-size:12px;}
 }
@@ -742,6 +786,16 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
     #sysBuild #options #stepPanel h2 {font-size:16px;}
     #sysBuild #options #stepPanel button {padding:4px 10px;font-size:11px;}
 }
+
+#sysBuild #options #stepPlans {padding:0 8px;}
+#sysBuild #options #stepPlans h2 {margin:30px 0 50px;text-align:center;font-family:'Open Sans';font-weight:100;text-transform:none;}
+#sysBuild #options #stepPlans .col-sm-4 {padding-left:7px;padding-right:7px;}
+#sysBuild #options #stepPlans h5 {margin:30px 0 20px;}
+#sysBuild #options #stepPlans .addOns {margin:0 0 20px;}
+#sysBuild #options #stepPlans .addOns .checkbox {padding:4px 0;}
+#sysBuild #options #stepPlans .addOns .checkbox label span {color:#999;font-style:italic;font-weight:100;}
+
+#sysBuild #options #stepEquipment {}
 
 #sysBuild #summary {}
 #sysBuild #summary.sticky {position:fixed;width:263px;top:20px;}
@@ -779,6 +833,13 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
          url('../fonts/archive.ttf') format('truetype'),
          url('../fonts/archive.svg#ArchiveRegular') format('svg');
 }
+
+
+
+
+
+
+
 
 
 
