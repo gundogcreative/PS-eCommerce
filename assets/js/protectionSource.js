@@ -86,6 +86,16 @@ $("#pageWrap").scroll(function() {
     }
 });
 
+$("#pageWrap").scroll(function() {    
+    var scroll = $("#pageWrap").scrollTop();
+    if (scroll > 230) {
+        $("#requestSupport").addClass("sticky");
+    }
+    else {
+        $("#requestSupport").removeClass("sticky");
+    }
+});
+
 
 
 

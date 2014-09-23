@@ -46,6 +46,7 @@ TABLE OF CONTENTS
 
 3.0 -- STEP BY STEP PROCESS
 3.1 -- CUSTOM SYSTEM BUILD
+3.2 -- SHOPPING CART
 
 4.0 -- ARCHIVE @FONT-FACE
 
@@ -689,6 +690,16 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
     footer #footerLogos ul#creditCardLogos li img {width:35px;}
 }
 
+footer #footerLogos ul#trustLogos {margin:20px 0 0;padding:0;text-align:center;}
+footer #footerLogos ul#trustLogos li {display:inline;}
+footer #footerLogos ul#trustLogos li img {max-width:165px;}
+
+@media (max-width: 540px) {
+    footer #footerLogos ul#trustLogos li {display:block;}
+}
+
+footer #footerRights {font-size:12px;text-align:center;margin:30px 0 0;}
+
 
 
 
@@ -761,6 +772,7 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
     .stepProcess .singleStep .stepBody {}
     .stepProcess .singleStep .stepBody p {font-size:12px;}
 }
+
 
 
 
@@ -841,6 +853,37 @@ footer #footerLogos ul#creditCardLogos li img {max-width:65px;}
 #sysBuild #summary .panel .panel-body table tr#summaryPlan {font-weight:bold;}
 #sysBuild #summary .panel .panel-body table tr#summaryDiscount {font-weight:bold;font-style:italic;}
 
+#sysBuild #requestSupport {}
+#sysBuild #requestSupport.sticky {position:fixed;width:263px;top:287px;}
+
+@media (max-width: 1199px) {
+    #sysBuild #requestSupport.sticky {width:213px;}
+}
+
+@media (max-width: 991px) {
+    #sysBuild #requestSupport {display:none;}
+}
+
+#sysBuild #requestSupport .panel {}
+#sysBuild #requestSupport .panel .panel-heading {text-align:center;font-weight:bold;font-family:'Montserrat';font-size:15px;padding:8px;background-color:#186ce5;color:#fff;border-color:#1255b3;}
+#sysBuild #requestSupport .panel .panel-body {padding:12px;}
+#sysBuild #requestSupport .panel .panel-body p {font-size:12px;color:#555;text-align:center;}
+#sysBuild #requestSupport .panel .panel-body p.did {font-size:18px;color:#333;font-weight:bold;}
+
+
+
+
+/* ---- 3.2 SHOPPING CART ---- */
+
+#cart {}
+
+#cart #emptyCart {text-align:center;padding:100px 0 250px;width:100%;clear:both;}
+#cart #emptyCart h3 {}
+#cart #emptyCart p {margin-top:15px;}
+
+@media (max-width: 480px) {
+    #cart #emptyCart p a {margin:6px 0;display:block;}
+}
 
 
 
