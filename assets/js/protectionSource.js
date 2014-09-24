@@ -110,6 +110,23 @@ $(".caretDrop").click(function(){
 
 
 
+//HOMEPAGE SLIDER (SLICK)
+
+$(document).ready(function(){
+    $('#homeSlider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        autoplay: true,
+        autoplaySpeed: 2500,
+    });
+});
+
+
+
+
+
+
 
 
 

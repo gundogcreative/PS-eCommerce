@@ -43,6 +43,7 @@ TABLE OF CONTENTS
 1.2.1 -- -- FOOTER {}
 
 2.0 -- SERVICE PLANS 
+2.1 -- HOME PAGE
 
 3.0 -- STEP BY STEP PROCESS
 3.1 -- CUSTOM SYSTEM BUILD
@@ -63,7 +64,7 @@ TABLE OF CONTENTS
 html {text-rendering:optimizeLegibility;}
 body {color:#333;font-family:'Open Sans';font-size:13px;overflow:hidden;width:100%;}
 
-#pageWrap {background-color:#fff;}
+#pageWrap {background-color:#fafafa;}
 
 
 
@@ -193,6 +194,10 @@ form {}
 /* ---- 0.7 PANELS ---- */
 
 .panel {border-radius:2px;}
+
+.panel .panel-heading.blue {background-color:#186ce5;border-color:#1255b3;}
+.panel .panel-heading.green {background-color:#51b54e;border-color:#3a8238;}
+.panel .panel-heading.orange {background-color:#e86e32;border-color:#cf632d;}
 
 
 
@@ -742,6 +747,67 @@ footer #footerRights {font-size:12px;text-align:center;margin:30px 0 0;}
 .servicePlan.premier {}
 .servicePlan.premier h3 {color:#e86e32;}
 .servicePlan.premier button {}
+
+
+
+
+/* ---- 2.1 HOME PAGE ---- */
+
+#homePage {}
+
+@media (max-width: 767px) {
+    #homePage {overflow-x:hidden;}
+}
+
+#homePage #featureShowcase {}
+#homePage #featureShowcase .panel {}
+#homePage #featureShowcase .panel:hover {border-color:#999;}
+#homePage #featureShowcase .panel .panel-body {padding:0;text-align:center;}
+#homePage #featureShowcase .panel .panel-body img {width:100%;}
+#homePage #featureShowcase .panel .panel-body h3 {font-size:18px;}
+#homePage #featureShowcase .panel .panel-body p {padding:0 0 16px;}
+
+
+
+
+/* ---- 2.1.1 HOME PAGE SLIDER ---- */
+
+#homePage #homeSlider {margin:0 0 90px;}
+#homePage #homeSlider .slide {min-height:435px;padding:0 30px;}
+#homePage #homeSlider .slide img {width:auto;height:auto;position:absolute;top:0;right:0;z-index:-10;}
+#homePage #homeSlider .slide h2 {width:70%;text-transform:none;line-height:40px;margin:60px 0 10px;padding:0;}
+#homePage #homeSlider .slide h4 {width:62%;text-transform:none;color:#999;line-height:22px;margin:0 0 20px;font-family:'Open Sans';font-weight:400;}
+#homePage #homeSlider .slide a.button {}
+
+.slick-prev, .slick-next {height:30px !important;}
+.slick-prev:before, .slick-next:before {color:#333 !important;font-size:30px !important;}
+.slick-prev:before {content:"\f104" !important;font-family:"FontAwesome" !important;}
+.slick-next:before {content:"\f105" !important;font-family:"FontAwesome" !important;}
+
+@media (max-width: 1199px) {
+    #homePage #homeSlider .slide h2 {width:70%;}
+    #homePage #homeSlider .slide h4 {width:40%;}
+    #homePage #homeSlider .slide a.button {}
+}
+
+@media (max-width: 991px) {
+    #homePage #homeSlider {text-align:center;}
+    #homePage #homeSlider .slide {padding:0 15px;}
+    #homePage #homeSlider .slide img {position:static;display:block;top:auto;right:inherit;margin:0 auto;width:75%;margin-bottom:20px;}
+    #homePage #homeSlider .slide h2 {width:100%;}
+    #homePage #homeSlider .slide h4 {width:100%;}
+    #homePage #homeSlider .slide a.button {text-align:center;}
+    .slick-prev:before, .slick-next:before {display:none !important;}
+}
+
+@media (max-width: 480px) {
+    #homePage #homeSlider {}
+    #homePage #homeSlider .slide h2 {font-size:20px;line-height:24px;}
+    #homePage #homeSlider .slide h4 {font-size:14px;line-height:17px;}
+    #homePage #homeSlider .slide a.button {display:block;margin-bottom:10px;}
+}
+
+#homePage #homeSlider #slideMobileAccess {}
 
 
 
