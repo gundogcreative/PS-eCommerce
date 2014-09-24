@@ -885,6 +885,50 @@ footer #footerRights {font-size:12px;text-align:center;margin:30px 0 0;}
     #cart #emptyCart p a {margin:6px 0;display:block;}
 }
 
+#cart #inCart {}
+#cart #inCart table {}
+#cart #inCart table tr {}
+#cart #inCart table tr th {border-color:#333;}
+#cart #inCart table tr td {vertical-align:middle;}
+#cart #inCart table tr td a {color:#333;}
+#cart #inCart table tr td.cartImg {width:90px;}
+#cart #inCart table tr td.cartTitle {font-weight:bold;font-size:15px;}
+#cart #inCart table tr td.cartTitle p {font-weight:normal;font-size:13px;}
+#cart #inCart table tr td.cartPrice {width:100px;}
+#cart #inCart table tr td.cartQty {width:80px;}
+#cart #inCart table tr td.cartQty input {width:75%;}
+#cart #inCart table tr td.cartRemove {width:15px;text-align:right;}
+#cart #inCart table tr td.cartRemove a {color:#dcdcdc;}
+#cart #inCart table tr td.cartRemove a:hover {color:#ff3333;}
+
+@media (max-width: 767px) {
+    #cart #inCart table tr td.cartImg {width:70px;}
+    #cart #inCart table {font-size:12px;}
+    #cart #inCart table tr td.cartTitle {font-weight:bold;font-size:13px;}
+    #cart #inCart table tr td.cartTitle p {font-weight:normal;font-size:11px;}
+}
+
+#cart #inCart table tr.totals td {font-size:15px;font-weight:400;border:none;padding:3px 10px;}
+#cart #inCart table tr.totals td:nth-child(1) {text-align:right;}
+#cart #inCart table tr.totals.sub td {padding-top:40px;font-weight:bold;}
+#cart #inCart table tr.totals.discount td {color:#ff3333;}
+#cart #inCart table tr.totals.ship {}
+#cart #inCart table tr.totals.tax {}
+#cart #inCart table tr.totals.grand td {font-weight:bold;}
+
+@media (max-width: 767px) {
+    #cart #inCart table tr.totals td {font-size:12px;}
+}
+
+#cart .cartControls {text-align:right;margin:30px 0;}
+#cart .cartControls:nth-child(1) {margin-top:0;}
+#cart .cartControls p {margin-top:12px;}
+
+@media (max-width: 480px) {
+    #cart .cartControls {text-align:center;}
+    #cart .cartControls button {width:100%;}
+}
+
 
 
 
