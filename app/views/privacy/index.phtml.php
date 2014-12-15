@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<title><?php echo $title; ?></title>
+
+    <!-- CSS -->
+    <?php echo $this->assets->outputCss(); ?>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+    </head>
+    <body>
+        <section id="header" class="privacy">
+          <section id="nav">
+            <div class="container">
+              <div id="brand">
+                <span class="nucards">nuCards</span>
+              </div><!--/ #brand -->
+        
+              <div id="menu">
+                <ul>
+                  <li><a href="index">Activate Cards</a></li>
+                </ul>
+              </div><!--/ #menu -->
+            </div>
+          </section><!--/ #nav -->
+        
+          <section id="hero">
+            <div class="container">
+              <h1><span class="nucards">nuCards</span> Privacy Policy.</h1>
+                <h3>Your information is important to us.</h3>
+            </div><!--/ .container -->
+          </section><!--/ #hero -->
+        </section><!--/ #header .success -->
+            
+        <section id="content">
+          <div class="container">
+            
+            <h3 style="text-align:center;margin-bottom:50px;">Privacy Policy</h3>
+            
+              <p>New Homeowner Promotion, LLC (“New Homeowner Promotion”) is a marketing and advertising company that assists other businesses. The following is New Homeowner Promotion's privacy policy that outlines the treatment of information New Homeowner Promotion collects from a consumer (“you”) on behalf of its business clients.</p>
+        
+            <h4>Information Collected</h4>
+        
+              <p>New Homeowner Promotion collects personal identifiable information and non-personal information. The personal identifiable information may include:  Name, Address, Telephone Number, Email Address, Fax Number, and any other information that you provide regarding interests in and use of various products, programs and services</p>
+        
+              <p>Non-personal information may include: Internet protocol addresses, Cookies, Internet tags, Navigational data</p>
+        
+              <p>New Homeowner Promotion collects this information when volunteered by you or by other means. We may combine any information that we receive from different sources.</p>
+        
+            <h4>Use of Information Collected</h4>
+        
+              <p>New Homeowner Promotion may share or sell personal identifiable information and non-personal information with our partner businesses, and other businesses that we select to offer you products, services, and promotion through our website or offline based on the information given to us. New Homeowner Promotion, or any of its partner or other businesses, may contact you directly by telephone, text messaging, facsimile, email, mail, or direct solicitation. We may also share any information collected as required by law and to prevent fraud or for the safety of our consumers.</p>
+        
+              <p>At any point, you may choose to opt-out from receiving emails or other communications by contacting us at the address or email address provided below.</p>
+        
+              <p>Those other businesses may include but are not limited to:
+              1800 Landscape,
+              A Better Look LLC,
+              A Cooler House,
+              ABT Home Renovations,
+              AC By J,
+              AZ Energy Efficient Home,
+              AZ Home Repair &amp; Remodel,
+              Ace Air,
+              Affordable Ceilling Storage Racks,
+              Affordable Water Heaters LLC,
+              Airite,
+              Allstate Appliances,
+              AreoHydro Systems Inc.,
+              Armadillo Grill,
+              At Home Furnishing,
+              Awnings by Design,
+              BTS Floors &amp; Remodeling,
+              Belsito Plumbing,
+              Best for Less Mattress &amp; Furniture,
+              Butler Window Coverings,
+              Cabinet Concierge,
+              Cameo Pools,
+              Certa Pro Painters,
+              Cool Breeze Home Solutions,
+              Culligan Water,
+              Custom Energy Design Inc,
+              DLG Diversified LLC,
+              DataMasters,
+              Dennis Sage Home Entertainment,
+              Desert Ridge Air Conditioning,
+              Diamond Back Billard &amp; Games,
+              Direct Buy - (Austin),
+              Direct Buy - (Fort Worth),
+              Direct Buy (Phoenix),
+              Direct Buy - (Dallas East),
+              Direct Buy (Phoenix East),
+              Direct Buy (SLC),
+              Direct Buy – (San Antonio),
+              Direct Buy- (Tucson),
+              Discover Energy Solutions,
+              Door Doctor,
+              Elegance in Design Inc,
+              Elegant Dentistry,
+              Emergency Air,
+              Ernesto Garcia Interior Design,
+              F.S Renovations,
+              Foot Soultion,
+              G &amp; D Construction ,
+              Going Green Solar,
+              Granite Transformations,
+              H2O,
+              Hale Pet Doors,
+              Homedge,
+              Hot Lead Test,
+              Lebasi Linens,
+              Maddy's Pool Repair &amp; Remodeling,
+              Maddys Pool,
+              Merchant Insurance Agency,
+              Mighty Mike,
+              Moon Valley Nurseries Landscape Division,
+              New Homeowners Promotions LLC,
+              Paddy' O Furniture,
+              Paramount Windows,
+              Perry Heating and Cooling,
+              Pest Controllers LLC,
+              Planet Earth,
+              Pool Chlor,
+              Preventive Pest Control,
+              Pristene Environmental Solutions ,
+              Protection Source LLC,
+              Puronics of Arizona,
+              Quality Family Foods Inc ,
+              Quality Foods,
+              R3 Remodeling,
+              RBG Kitchen &amp; Bath ,
+              RS Water Holdings LLS ,
+              Renegade Water Services,
+              RiverCity Satellite,
+              Sedona Pines ,
+              Semper Fidelis Garage Doors,
+              Service First ,
+              Southern Shutters &amp; Blinds,
+              Southwest Dental,
+              Southwest Door &amp; Windows,
+              Specialty Pool Services,
+              Stealth Solar,
+              Sun City Auning,
+              Sunburst Shutters &amp; Blinds,
+              Sunscape Windows and Doors,
+              Sunwest Painting LLC.,
+              The Synthetic Grass Store,
+              Top Choice Electric,
+              Top Choice Solar,
+              Tribal Waters,
+              Venetian Hardwood Flooring,
+              Whitening Xpressions,
+              Xtreme Air Services
+              </p>
+        
+            <h4>Security</h4>
+        
+              <p>New Homeowner Promotion is committed to taking appropriate security measures to safeguard all of your information from unauthorized access and disclosure. However, no security system is perfect, and there is always a risk that, as a result of the collection and transmission of data through any electronic means, your personal identifiable information and non-personal information may be viewed and used by unauthorized third parties.</p>
+        
+            <h4>COPPA Disclaimer</h4>
+        
+              <p>New Homeowner Promotion does not knowingly collect, maintain, or use personal information from our website from children under the age of thirteen (13) years. If a child whom New Homeowner Promotion knows to under the age of thirteen years sends personal information to us online, we will use that information only to respond directly to that child, notify parents, or seek parental consent.</p>
+        
+            <h4>Changes to Policy</h4>
+        
+              <p>This privacy policy was last updated on November 21, 2014. New Homeowner Promotion reserves its right to make changes, whether material or not, to this Privacy Policy at any time. If we make material changes, we will notify you by email at the address that we have on file.</p>
+        
+            <h4>Contact Information</h4>
+        
+              <p>If you wish to contact us to correct, amend, or delete information, or for any reason, you may contact us at:</p>
+        
+              <p>New Homeowner Promotion, LLC</p>
+            
+          </div><!--/ .container -->
+        </section><!--/ #content -->
+          
+        <section id="footer">
+          <div class="container">
+            <div class="left">
+              <p>&copy; nuCards, Inc.</p>
+            </div><!--/ .left -->
+          
+            <div class="right">
+              <ul>
+                <li><a href="privacy">Terms</a></li>
+                <!--<li><a href="terms.html">Terms</a></li>-->
+              </ul>
+            </div><!--/ .right -->
+         </div><!--/ .container -->
+        </section><!--/ #footer -->
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <?php echo $this->assets->outputJs(); ?>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+/* nuCards Activation CSS Source */
+
+body {font-family:'Maven Pro', sans-serif;}
+
+h1, h2, h3, h4, h5, h6, {color:#333;}
+p {color:#999;}
+
+::selection {background:#9738ba;}
+::-moz-selection {background:#9738ba;}
+
+.nucards {font-weight:bold;letter-spacing:-.08em;}
+
+form {}
+label {font-size:16px;}
+label span.required {color:#ff3333;font-weight:normal;}
+.form-control {height:40px;padding:10px 12px;font-size:16px;border-radius:2px;-webkit-border-radius:2px;}
+.form-control:focus {box-shadow:none;-webkit-box-shadow:none;border-color:#3776bc;}
+.form-group {}
+.form-group .help-block {font-size:12px;font-weight:bold;}
+.form-group .help-block.required {color:#ff3333;}
+ 
+.btn {font-size:18px;border-radius:2px;-webkit-border-radius:2px;padding:10px 14px;-webkit-transition:.25s;-moz-transition:.25s;-o-transition:.25s;transition:.25s;}
+.btn:active:focus {outline:none;}
+.btn-default {background-color:#54B847;color:#fff;border-color:#4BA03F;}
+.btn-default:hover, .btn-default:focus {background-color:#4BA03F;color:#fff;border-color:#418C37;outline:none;}
+
+.btn i {-webkit-transition:.25s;-moz-transition:.25s;-o-transition:.25s;transition:.25s;}
+.btn:hover i {margin-left:40px;}
+
+.alert {border-radius:2px;-webkit-border-radius:2px;font-size:16px;}
+.alert-danger {background-color:#b74848;color:#fff;border-color:#993d3d;}
+
+.tooltip {font-weight:normal;}
+
+/* ----------- */
+
+#header {background-color:#3776bc;}
+#header.success {background-color:#54b847;}
+#header.privacy {background-color:#333;}
+
+#nav {display:inline-block;clear:both;width:100%;border-bottom:1px solid #2F689B;background-color:#3776BC;padding:10px 0;}
+#header.success #nav {background-color:#54b847;border-color:#47993C;}
+#header.privacy #nav {background-color:#333;border-color:#222;}
+
+#nav #brand {float:left;display:block;}
+#nav #brand span {font-size:36px;color:#F2F4F6;}
+
+@media (max-width: 480px) {
+  #nav #brand span {font-size:28px;}
+}
+
+#nav #menu {float:right;display:block;}
+#nav #menu ul {padding:0;margin:13px 0;}
+#nav #menu ul li {display:inline;font-size:18px;}
+#nav #menu ul li a {color:#F2F4F6;}
+#nav #menu ul li a:hover {}
+#nav #menu ul li.activate {}
+
+@media (max-width: 480px) {
+  #nav #menu ul {padding:0;margin:10px 0;}
+  #nav #menu ul li {font-size:14px;}
+}
+
+#hero {display:inline-block;clear:both;width:100%;background-color:#3776BC;text-align:center;padding:100px 0;}
+#header.success #hero {background-color:#54b847;}
+#header.privacy #hero {background-color:#333;}
+
+#hero h1 {color:#F2F4F6;margin:0;padding:0;}
+#hero h3 {color:#C9CCD2;margin:0;padding:0;}
+
+@media (max-width: 480px) {
+  #hero {padding:60px 0;}
+  #hero h1 {font-size:23px;}
+  #hero h3 {font-size:14px;}
+}  
+  
+#activation {display:inline-block;clear:both;width:100%;}
+#activation form {margin:40px 160px;}
+#activation form button {margin-top:20px;}
+#activation form p.disclaimer {text-align:center;padding:14px 0;font-size:12px;color:#bbb;}
+#activation form p.disclaimer a {color:#aaa;}
+#activation form p.disclaimer a:hover {}
+
+@media (max-width: 768px) {
+  #activation form {margin:40px 80px;}
+}
+
+@media (max-width: 480px) {
+  #activation form {margin:40px 0px;}
+}
+
+#socialize {text-align:center;padding:60px 0;}
+
+#socialize h1 {margin:0 0 50px;}
+
+#socialize ul {margin:0;padding:0;}
+#socialize ul li {display:inline;margin:0 4px;font-size:16px;}
+#socialize ul li a {padding:12px 40px;}
+#socialize ul li a i {}
+#socialize ul li a:hover {}
+#socialize ul li a:hover i {}
+
+#socialize ul li.insta a {background-color:#517fa4;color:#efefef;}
+#socialize ul li.twitter a {background-color:#00aced;color:#fff;}
+#socialize ul li.fb a {background-color:#3b5998;color:#fff;}
+
+@media (max-width: 480px) {
+  #socialize {padding:30px 0;}
+  #socialize h1 {font-size:23px;margin:0 0 20px;}
+  #socialize ul li {display:block;margin:0 0 15px;}
+  #socialize ul li a {display:block;}
+}
+
+#content {display:block;clear:both;width:100%;margin:80px 0;}
+
+#footer {display:inline-block;clear:both;width:100%;padding:60px 0 0;}
+
+#footer .left {float:left;}
+#footer .right {float:right;}
+
+#footer p {font-size:13px;color:#999;}
+
+#footer ul {margin:0;padding:0;}
+#footer ul li {display:inline;font-size:13px;margin-left:6px;}
+#footer ul li a {color:#999;}
+#footer ul li a:hover {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
