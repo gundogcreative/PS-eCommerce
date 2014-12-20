@@ -1,27 +1,14 @@
-PS-eCommerce
-============
+cheetah
+=======
 
-###PROTECTION SOURCE FRONT-END WEB SOURCE V1.0###
-
-*08/18/2014*
-
-Author: Austin Heywood / austinheywood@gmail.com
-
-
-###HTML/CSS Framework###
-
-Twitter Bootstrap V3.2.0 (getbootstrap.com/)
-
-###Mobile Navigation Drawer Menu###
-
-Snap.js V1.9.2 (https://github.com/jakiestfu/Snap.js/)
-
-###Webfont Icons###
-
-Font Awesome V4.1.0 (fortawesome.github.io/Font-Awesome/)
-
-###Button Check Switches###
-
-Bootstrap-Switch V3 (bootstrap-switch.org)
+The cheetah module will connect the Chatfield Group's software/db with Cheetah's software. 
+It will handle both outbound, though merely the formation and exportation of the xml, and inbound. 
+With this, it must keep logs/records on times run and records imported and exported. It will also 
+maintain a record of all files exported or imported by date. These files will maintained for 30 days
+in original formated and will compressed following this time period. 
 
 
+#To Do
+-[ ] cUrl class
+-[ ] Import Class
+-[ ] Export Class
