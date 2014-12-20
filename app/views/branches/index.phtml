@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+   	<meta charset="utf-8" />   
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>{{ title }}</title>
+
+	<meta name="description" content="" />
+	<meta property="og:site_name" content="" /> 
+
+    <!-- CSS -->
+    {{ assets.outputCss() }}
+
+    </head>
+    <body>
+
+    <!-- JS -->
+    {{ assets.outputJs() }}
+
+        <div class="pageContent">
+
+            <header>
+                {{ headerHtml }}
+            </header>
+
+            <div class="content">
+                <div id="branchesMessage" class="flashSession successSession dataList"><?php $this->flashSession->output() ?></div>
+                <table id="branches" class="dataList">
+                    <thead>
+                        <tr>
+                            <th width="150">Branch Name</th>
+                            <th width="150">Metro Id</th>
+                            <th width="150">Abbreviation</th>
+                            <th width="150">Region</th>
+                            <th width="100">Active</th>
+                            <th width="30"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for b in pageInfo.items %}
+                        <tr>
+                            <td>{{ b.branchName|e }}</td>
+                            <td>{{ b.metroId|e }}</td>
+                            <td>{{ b.abbreviation|e }}</td>
+                            <td>{{ b.regions.regionName|e }}</td>
+                            {% if b.isActive == 1 %}
+                                <td>Yes</td>
+                            {% else %}
+                                <td>No</td>
+                            {% endif  %}
+                            <td><a href='branches/edit/?id={{ b.id }}'>{{ image("img/edit.png", "class": "editIcon", "name": b.id) }}</a></td>
+                        </tr>
+                        {% endfor  %}
+                        <tr>
+                            {% if pageInfo.total_pages > 1 %}
+                                <td colspan="5"></td>
+                                <td></td>
+                                <td><a href="/branches">First</a></td>
+                                <td><a href="/branches/?page={{ pageInfo.before }}">{{ image("img/previousIcon.png", "class": "navigationIcon") }}{{ image("img/previousIcon.png", "class": "navigationIcon") }}</a> <a href="/branches/?page={{ pageInfo.next }}">{{ image("img/nextIcon.png", "class": "navigationIcon") }}{{ image("img/nextIcon.png", "class": "navigationIcon") }}</a></td>
+                                <td><a href="/branches/?page={{ pageInfo.last }}">Last</a></td>
+                                <td><a href="branches/new">{{ image("img/addIcon.png", "class": "addIcon") }}</a></td>
+                            {% else %}
+                                <td colspan="5"></td>
+                            {% endif %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>
